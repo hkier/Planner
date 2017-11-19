@@ -4,7 +4,7 @@
 const Doctor = require('./doctor');
 const Pharmacy = require('./pharmacy');
 const Rx = require('./rx');
-const User = require('/user');
+const User = require('./user');
 
 User.hasMany(Rx);
 Rx.belongsTo(User);

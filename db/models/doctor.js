@@ -20,4 +20,4 @@ var Doctor = db.define('doctor', {
     }
 })
 
-module.exports = User
+module.exports = Doctor
