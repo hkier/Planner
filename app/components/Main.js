@@ -8,7 +8,7 @@ import Navbar from './Navbar';
 // import SingleStudent from './SingleStudent';
 // import store, { fetchCampuses, fetchStudents } from '../store/store';
 
-ß
+
 console.log('we are in Main.js!')
 export default class Main extends Component {
 //this is the main momdule responsible for setup and routing.

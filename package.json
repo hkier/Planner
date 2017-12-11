@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server/start.js",
+    "build": "webpack",
+    "build-watch": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -37,5 +39,8 @@
     "redux-thunk": "^2.1.0",
     "sequelize": "^3.24.6",
     "volleyball": "^1.4.1"
+  },
+  "devDependencies": {
+    "webpack": "^3.10.0"
   }
 }
