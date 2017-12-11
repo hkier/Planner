@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 //displays the navbar on all screens
 
 const Navbar = (props) => {
-
+console.log('did we get here?')
     const navbar = props.navbar
 
     return (

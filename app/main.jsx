@@ -5,12 +5,12 @@ import { Provider } from 'react-redux'
 import { BrowserRouter as Router } from 'react-router-dom';
 import store from './store/store'
 import Main from './components/Main'
-
+console.log('did we get here?')
 render (
-//   <Provider store={store}>
+  <Provider store={store}>
   <Router>
     <Main />
-  </Router>,
-// </Provider>,
+  </Router>
+</Provider>,
   document.getElementById('planner')
 )
