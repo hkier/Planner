@@ -21,7 +21,6 @@ componentDidMount () {
   render() {
     return (
       <div>
-      <h2>Something is here!!!!</h2>
         <Navbar />
       </div>
     );
