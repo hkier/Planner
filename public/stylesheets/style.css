@@ -1,4 +1,38 @@
-body{
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px ;
     background-color: rgba(0, 17, 255, 0.87);
-    margin: 20px 
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left{
+    width: 30%;
+  }
+
+.right {
+  width: 30%;
+}
+
+.middle {
+  width: 30%;
+}
+
+.action {
+    width: 5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }

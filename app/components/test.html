@@ -1,12 +1,58 @@
 <html>
 <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="../../public/stylesheets/style.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" ></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+        <script async defer src="../../public/bundle.js"></script>
+      </head>
 </head>
 
 <body>
+        <div>
+                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                    <a className="navbar-brand">Pill Planner</a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div className="navbar-nav">
+                            <a className="nav-item nav-link" href="/medicine">Add Medicine <span className="sr-only">(current)</span></a>
+                            <a className="nav-item nav-link" href="/schedule">Schedule</a>
+                            <a className="nav-item nav-link disabled">Doctors</a>
+                            <a className="nav-item nav-link disabled">Place Holder</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            
+            <div class="row">
+              <div class="column left" >
+                <h2>Name</h2>
+              </div>
+              <div class="column middle" >
+                <h2>Email</h2>
+              </div>
+              <div class="column right" >
+                <h2>Text Number</h2>
+              </div>
+              <div class="column action" >
+                    <h2>+/-</h2>
+                  </div>
+            </div>
+            
+            
 <form onsubmit="">
-<span>Name:<input name='newName' type="text" /></span><br>
-<span>Email:<input name='newEmail' type="text" /></span><br>
-<span>Text Number:<input name='newText' type="text" /></span><br>
+<span class="column left"><input name='newName' type="text" /></span>
+<span class="column middle"><input name='newEmail' type="text" /></span>
+<span class="column right"><input name='newText' type="text" /></span>
+<button type="submit" class="btn btn-warning btn-xs">
+        <span class="glyphicon glyphicon-plus" />
+      </button>
 </form>    
 </body>
 
